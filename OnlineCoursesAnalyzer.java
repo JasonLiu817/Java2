@@ -8,12 +8,12 @@ import java.util.stream.Collectors;
 
 public class OnlineCoursesAnalyzer {
 
-    List<Course> courses = new ArrayList<>();
+  List<Course> courses = new ArrayList<>();
 
-    public OnlineCoursesAnalyzer(String datasetPath) {
-        BufferedReader br = null;
-        String line;
-        try {
+  public OnlineCoursesAnalyzer(String datasetPath) {
+      BufferedReader br = null;
+      String line;
+      try {
             br = new BufferedReader(new FileReader(datasetPath, StandardCharsets.UTF_8));
             br.readLine();
             while ((line = br.readLine()) != null) {
